@@ -9,6 +9,7 @@ st.info(shutil.which("cuda"))
 st.info(shutil.which("streamlit"))
 
 sys.path = [p for p in sys.path if p.find("3.7")==-1 and not p.startswith("/usr/local")]
+sys.path.append("/home/appuser/venv/lib/python3.9")
 st.info(sys.path)
 
 import cctbx
