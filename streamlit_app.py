@@ -25,5 +25,5 @@ target = Path("/home/appuser/venv/share/cctbx")
 if not target.exists():
   target.symlink_to("/home/appuser/venv/lib/python3.9/site-packages/cctbx")
 
-            import cctbx
+import cctbx
 import iotbx
