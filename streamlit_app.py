@@ -15,7 +15,7 @@ for p in sys.path:
   if p.is_dir():
     st.info(f"{p}: {Path(p).glob('*')}")
   else:
-    st.info(f"{p})
+    st.info(f"{p}")
 
 #sys.path = [p for p in sys.path if p.find("3.7")==-1 and not p.startswith("/usr/local")]
 #sys.path.append("/home/appuser/venv/lib/python3.9")
