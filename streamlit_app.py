@@ -17,7 +17,7 @@ for p in sys.path:
   else:
     st.info(f"{p}")
     
-for p in "/home/appuser/venv /home/appuser/venv/share /home/appuser/venv/share/cctbx".split():
+for p in "/usr/local/share/cctbx /usr/local/share /usr/local/share/cctbx /home/appuser/venv /home/appuser/venv/share /home/appuser/venv/share/cctbx".split():
   p = Path(p)
   if not p.exists():
     st.info(f"{p}: does not exist")
