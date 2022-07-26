@@ -13,7 +13,7 @@ st.info(shutil.which("streamlit"))
 for p in sys.path:
   p = Path(p)
   if p.is_dir():
-    st.info(f"{p}: {Path(p).glob('*')}")
+    st.info(f"{p}: {list(Path(p).glob('*'))}")
   else:
     st.info(f"{p}")
 
