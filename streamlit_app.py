@@ -32,9 +32,9 @@ for p in "/usr/local /usr/local/bin /usr/local/share /usr/local/share/cctbx /hom
 #sys.path.append("/home/appuser/venv/lib/python3.9")
 #st.info(sys.path)
 
-#target = Path("/home/appuser/venv/share/cctbx")
-#if not target.exists():
-#  target.symlink_to("/home/appuser/venv/lib/python3.9/site-packages/cctbx")
+target = Path("/home/appuser/venv/share/cctbx")
+if not target.exists():
+  target.symlink_to("/home/appuser/.conda/share/cctbx")
 
 import cctbx
 import iotbx
