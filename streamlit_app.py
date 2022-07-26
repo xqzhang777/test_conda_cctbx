@@ -15,6 +15,6 @@ st.info(sys.path)
 from pathlib import Path
 target = Path("/home/appuser/venv/share/cctbx")
 if not target.exists():
-  Path("/home/appuser/venv/lib/python3.9/site-packages/cctbx").symlink_to(target)
+  target.symlink_to("/home/appuser/venv/lib/python3.9/site-packages/cctbx")
 import cctbx
 import iotbx
