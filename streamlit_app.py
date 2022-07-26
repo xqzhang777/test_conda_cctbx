@@ -12,5 +12,9 @@ sys.path = [p for p in sys.path if p.find("3.7")==-1 and not p.startswith("/usr/
 sys.path.append("/home/appuser/venv/lib/python3.9")
 st.info(sys.path)
 
+from pathlib import Path
+target = Path("/home/appuser/venv/share/cctbx")
+if not target.exists():
+  Path("/home/appuser/venv/lib/python3.9/site-packages/cctbx").symlink(target)
 import cctbx
 import iotbx
