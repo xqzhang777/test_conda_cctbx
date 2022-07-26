@@ -13,17 +13,17 @@ st.info(shutil.which("streamlit"))
 for p in sys.path:
   p = Path(p)
   if p.is_dir():
-    st.info(f"{p}: {list(Path(p).glob('*'))}")
+    st.info(f"{p}: {[str(pp) for pp in Path(p).glob('*')]}")
   else:
     st.info(f"{p}")
     
-for p in "/usr/local /usr/local/share /usr/local/share/cctbx /home/appuser/venv /home/appuser/venv/share /home/appuser/venv/share/cctbx".split():
+for p in "/usr/local /usr/local/bin /usr/local/share /usr/local/share/cctbx /home/appuser/venv /home/appuser/venv/bin /home/appuser/venv/share /home/appuser/venv/share/cctbx".split():
   p = Path(p)
   if not p.exists():
     st.info(f"{p}: does not exist")
     continue
   if p.is_dir():
-    st.info(f"{p}: {list(Path(p).glob('*'))}")
+    st.info(f"{p}: {[str(pp) for pp in Path(p).glob('*')]}")
   else:
     st.info(f"{p}")
   
