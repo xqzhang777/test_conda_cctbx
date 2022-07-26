@@ -4,6 +4,7 @@ channels:
   - conda-forge
 dependencies:
   - cctbx-base
+  - cctbx
   - python=3.9
   - pip
   - pip:
