@@ -10,6 +10,7 @@ if not target.exists():
 
 import cctbx
 import iotbx
+from cctbx.xray.ext import *
 
 st.info(dir(iotbx))
 st.info(dir(cctbx))
