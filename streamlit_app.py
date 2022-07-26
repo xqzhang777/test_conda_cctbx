@@ -16,6 +16,17 @@ for p in sys.path:
     st.info(f"{p}: {list(Path(p).glob('*'))}")
   else:
     st.info(f"{p}")
+    
+for p in "/home/appuser/venv /home/appuser/venv/share /home/appuser/venv/share/cctbx".split():
+  p = Path(p)
+  if not p.exists():
+    st.info(f"{p}: does not exist")
+    continue
+  if p.is_dir():
+    st.info(f"{p}: {list(Path(p).glob('*'))}")
+  else:
+    st.info(f"{p}")
+  
 
 #sys.path = [p for p in sys.path if p.find("3.7")==-1 and not p.startswith("/usr/local")]
 #sys.path.append("/home/appuser/venv/lib/python3.9")
