@@ -17,7 +17,7 @@ import iotbx
 # cctbx imports
 
 # from cctbx import xray
-from cctbx import maptbx
+# from cctbx import maptbx
 from cctbx import miller
 
 from cctbx.array_family import flex
