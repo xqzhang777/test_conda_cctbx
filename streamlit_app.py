@@ -20,7 +20,9 @@ import iotbx
 # from cctbx import maptbx
 # from cctbx import miller
 
-from cctbx.array_family import flex
+#from cctbx.array_family import flex
+# All reported: ImportError: __import__("boost_python_meta_ext"): No module named 'boost_python_meta_ext'
+# ====> tested until here
 from cctbx import crystal
 from cctbx import sgtbx, uctbx
 
