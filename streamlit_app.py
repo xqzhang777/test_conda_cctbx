@@ -8,7 +8,7 @@ target = Path("/home/appuser/venv/share/cctbx")
 if not target.exists():
   target.symlink_to("/home/appuser/.conda/share/cctbx")
 
-  
+sys.path += ["/home/appuser/venv/lib/python3.9/lib-dynload"]  
   
 import cctbx
 import iotbx
@@ -16,11 +16,11 @@ import iotbx
 # xyz_utils.py
 # cctbx imports
 
-# from cctbx import xray
-# from cctbx import maptbx
-# from cctbx import miller
+from cctbx import xray
+from cctbx import maptbx
+from cctbx import miller
 
-#from cctbx.array_family import flex
+from cctbx.array_family import flex
 # All reported: ImportError: __import__("boost_python_meta_ext"): No module named 'boost_python_meta_ext'
 # ====> tested until here
 from cctbx import crystal
