@@ -2,4 +2,10 @@ name: test_conda
 channels:
   - pytorch
 dependencies:
-  - pytorch=1.11.0
+  - pip
+  - pip:
+      - streamlit
+      - pandas
+      - numpy
+      - scipy
+      - git+https://gitlab.com/gchojnowski/findmysequence.git
