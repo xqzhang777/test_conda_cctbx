@@ -4,7 +4,6 @@ channels:
   - bioconda
   - pytorch
 dependencies:
-  - python=3.9
   - numpy=1.22.3
   - pandas=1.4.4
   - bokeh=2.4.3
