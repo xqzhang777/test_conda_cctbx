@@ -4,9 +4,3 @@ channels:
   - conda-forge
 dependencies:
   - python=3.9
-  - pip
-  - pip:
-      - streamlit==1.11.0
-      - pandas
-      - numpy
-      - scipy
