@@ -6,3 +6,4 @@ h5py==3.7.0
 hmmer
 torch
 pyfastx==0.8.4
+zstandard
