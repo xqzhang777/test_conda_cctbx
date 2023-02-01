@@ -4,5 +4,5 @@ bokeh==2.4.3
 pandas==1.5.0
 h5py==3.7.0
 hmmer
-pytorch
+torch
 pyfastx==0.8.4
