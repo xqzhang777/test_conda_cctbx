@@ -7,6 +7,7 @@ sys.path += ["/home/appuser/venv/lib/python3.9/lib-dynload"]
 
 st.info(list(Path("/").rglob("*hmmer*")))
 st.info(list(Path("/").rglob("*findmysequence*")))
+st.info(os.environ["DL_LIBRARY_PATH"])
 
 st.info(list(Path("/home/appuser/venv/")))
 
